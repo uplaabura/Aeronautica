@@ -15,11 +15,11 @@ E:/專案/Project Aeronautica
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49188
+56641
 Successfully changed project path to: E:/專案/Project Aeronautica
 E:/專案/Project Aeronautica
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path E:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,40 +35,40 @@ Initialize mono
 Mono path[0] = 'E:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/Program Files (x86)/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001941 seconds.
+Registered in 0.001804 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 40.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.970 seconds
+- Completed reload, in  0.952 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003348 seconds.
+Registered in 0.004304 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 41.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.072 seconds
+- Completed reload, in  1.115 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2184 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 95.6 MB.
 System memory in use after: 95.7 MB.
 
 Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2611.
-Total: 2.180700 ms (FindLiveObjects: 0.181700 ms CreateObjectMapping: 0.071700 ms MarkObjects: 1.870100 ms  DeleteObjects: 0.055800 ms)
+Total: 2.203800 ms (FindLiveObjects: 0.205700 ms CreateObjectMapping: 0.077800 ms MarkObjects: 1.860200 ms  DeleteObjects: 0.059300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -82,17 +82,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/Bullets 1-Sheet.png
-  artifactKey: Guid(c905abbe51ee32b4a88b3e311f1c5ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Bullets 1-Sheet.png using Guid(c905abbe51ee32b4a88b3e311f1c5ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9c543907068661eedf581fec393a0e') in 0.132565 seconds 
-  Import took 0.138264 seconds .
+  path: Assets/Sprites/Bullets 2-Sheet.png
+  artifactKey: Guid(5a145200e6657bb43921b7817e718624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Bullets 2-Sheet.png using Guid(5a145200e6657bb43921b7817e718624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6815f1655d7ac779cb9350a08d22a550') in 0.110970 seconds 
+  Import took 0.116805 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 307.185466 seconds.
-  path: Assets/Sprites/Bullets 2-Sheet.png
-  artifactKey: Guid(5a145200e6657bb43921b7817e718624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Bullets 2-Sheet.png using Guid(5a145200e6657bb43921b7817e718624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5212f9fb7c2742d1887acf46cc885f4b') in 0.032978 seconds 
-  Import took 0.038418 seconds .
+  Time since last request: 0.000297 seconds.
+  path: Assets/Sprites/Bullets 1-Sheet.png
+  artifactKey: Guid(c905abbe51ee32b4a88b3e311f1c5ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Bullets 1-Sheet.png using Guid(c905abbe51ee32b4a88b3e311f1c5ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4564629c193084cb02da8c2427d8e317') in 0.034835 seconds 
+  Import took 0.041265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.024914 seconds.
+  path: Assets/Sprites/Bullets 3-Sheet.png
+  artifactKey: Guid(c5133288442989747a434ec7841bff60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Bullets 3-Sheet.png using Guid(c5133288442989747a434ec7841bff60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defb3265c7b201812a5df17e923319d9') in 0.034522 seconds 
+  Import took 0.039457 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
