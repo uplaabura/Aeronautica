@@ -1,9 +1,4 @@
 Library/
-Logs/
-obj/
-Packages/
-ProjectSettings/
-UserSettings/
-Temp/
+
 *.csproj
 *.sln
