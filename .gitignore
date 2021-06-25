@@ -1,8 +1,8 @@
-Library\*
-Logs\*
-obj\*
-Packages\*
-ProjectSettings\*
-UserSettings\*
+Library/
+Logs/
+obj/
+Packages/
+ProjectSettings/
+UserSettings/
 *.csproj
 *.sln
