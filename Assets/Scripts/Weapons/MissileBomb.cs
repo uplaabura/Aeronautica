@@ -6,7 +6,7 @@ public class MissileBomb : MonoBehaviour
 {
     public float deactivateTime = 2f;
     public float speed = 2f;
-    public float offsetAngle = 50;
+    public float offsetAngle = 60;
 
     private Rigidbody2D rbody;
     //public GameObject explosionPrefab;
