@@ -5,8 +5,8 @@ using UnityEngine;
 public class BasicBullet : MonoBehaviour
 {
     public float deactivateTime = 1f;
-    public float bulletSpeed = 9f;
-    public float bulletAngleOffset;
+    public float speed = 9f;
+    public float offsetAngle = 10;
 
     private Rigidbody2D rbody;
     //public GameObject explosionPrefab;
@@ -19,17 +19,12 @@ public class BasicBullet : MonoBehaviour
     private void OnEnable()
     {
         Invoke("DeactivateGameObject", deactivateTime);
-        bulletAngleOffset = Random.Range(-10f, 10f);
+        OffsetThenPush();
     }
 
     void Update()
     {
-        //方向*速度
-        //以下是直直發射
-        //rigidbody.velocity = transform.up * bulletSpeed
-
-        //以下是角度隨z軸旋轉bulletAngleOffset後以bulletSpeed發射
-        rbody.velocity = (Quaternion.AngleAxis(bulletAngleOffset, Vector3.forward) * Vector3.up) * bulletSpeed;
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -53,6 +48,17 @@ public class BasicBullet : MonoBehaviour
     //    Instantiate(explosionPrefab, gameObject.transform.position, Quaternion.identity);
     //    Destroy(gameObject);
     //}
+
+    void OffsetThenPush()
+    {
+        float _offset = Random.Range(-offsetAngle, offsetAngle);
+        //方向*速度
+        //以下是直直發射
+        //rigidbody.velocity = transform.up * bulletSpeed
+
+        //以下是角度隨z軸旋轉bulletAngleOffset後以bulletSpeed發射
+        rbody.velocity = (Quaternion.AngleAxis(_offset, Vector3.forward) * Vector3.up) * speed;
+    }
 
     void DeactivateGameObject()
     {
