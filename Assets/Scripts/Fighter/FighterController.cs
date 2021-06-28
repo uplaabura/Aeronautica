@@ -26,14 +26,11 @@ public class FighterController : MonoBehaviour
 
         attackCharger = attackSpeed;
 
-        //¥H¤U³o­Ó·|¦b³o­ÓscriptªþµÛªºgameObject(¦b³oÃä¬OFighter)ªº¤l¥Ø¿ý§äAttack Point
         weaponLauncher = gameObject.transform.Find("Weapon Launcher");
-
-        //¥H¤U³o­Ó·|¦b¾ã­Óscene§äWeapon Launcher³o­ÓGameObject
         //weaponLauncher = GameObject.Find("Weapon Launcher").transform;
-}
+    }
 
-void Update()
+    void Update()
     {
         Move();
         Attack();
@@ -94,6 +91,7 @@ void Update()
     }
     void Attack()
     {
+        //ä¹‹å‰ç”¨æ±ºå®šæ”»é€Ÿçš„æ–¹æ³•ï¼Œå¤šä¸€å€‹bool canAttack
         //attackCharger += Time.deltaTime;
         //if (attackCharger >= attackSpeedThreshold)
         //{
@@ -112,6 +110,7 @@ void Update()
         //        //play sound FX
         //    }
         //}
+
         attackCharger += Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Space))
