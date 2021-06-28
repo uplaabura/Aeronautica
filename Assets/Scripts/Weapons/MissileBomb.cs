@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicBullet : MonoBehaviour
+public class MissileBomb : MonoBehaviour
 {
-    public float deactivateTime = 1f;
-    public float bulletSpeed = 9f;
+    public float deactivateTime = 2f;
+    public float bulletSpeed = 2f;
     public float bulletAngleOffset;
 
     private Rigidbody2D rbody;
@@ -19,7 +19,6 @@ public class BasicBullet : MonoBehaviour
     private void OnEnable()
     {
         Invoke("DeactivateGameObject", deactivateTime);
-        bulletAngleOffset = Random.Range(-10f, 10f);
     }
 
     void Update()
@@ -29,7 +28,10 @@ public class BasicBullet : MonoBehaviour
         //rigidbody.velocity = transform.up * bulletSpeed
 
         //以下是角度隨z軸旋轉bulletAngleOffset後以bulletSpeed發射
+        bulletAngleOffset = Random.Range(-10f, 10f);
         rbody.velocity = (Quaternion.AngleAxis(bulletAngleOffset, Vector3.forward) * Vector3.up) * bulletSpeed;
+
+        
     }
 
     //之前在Update()裡面用的Movement();
