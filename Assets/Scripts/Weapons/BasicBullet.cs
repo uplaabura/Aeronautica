@@ -32,6 +32,14 @@ public class BasicBullet : MonoBehaviour
         rbody.velocity = (Quaternion.AngleAxis(bulletAngleOffset, Vector3.forward) * Vector3.up) * bulletSpeed;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "bullets")
+        {
+            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.collider, true);
+        }
+    }
+
     //之前在Update()裡面用的Movement();
     //void Movement()
     //{
